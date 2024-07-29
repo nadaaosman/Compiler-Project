@@ -1,0 +1,48 @@
+int test0;
+{
+    int test1;
+    {
+        test0=7;
+        test1=8;
+        int test2;
+        int y=5;
+    }
+
+    //undecalred in this scope
+    //test2=4;
+
+    test1=10;
+    {
+        test1=5;
+        test0=9;
+        int test2=7;
+        int y=9;
+        {
+    string y = "hiii";
+        }
+
+    }
+}
+//undecalred in this scope
+//test1=8;
+
+int test1=8;
+
+//undecalred in this scope
+//test2=4;
+
+int test2=4;
+{
+    test2=4;
+    test1=5;
+    int test3;
+    {
+        test3=- 7.5;
+        test0= true;
+    }
+}
+test0=false;
+
+//undecalred in this scope
+//test3=0;
+

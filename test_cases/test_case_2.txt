@@ -1,0 +1,43 @@
+float summation(int x , float y)
+{
+  int total = x +y;
+  return total;
+}
+
+string x = "nada";
+int test = 20;
+float men= 30.5;
+int sum = 10 + summation(5,10.5) + (test * men ) - 50;
+
+//error invalid operator
+//int sum = 10 + summation(5,10.5) + (test * men ) + x;
+
+
+bool z= false;
+bool y = !z && true;
+
+//error invalid operator
+//bool y = !z && x;
+
+char hana ='a';
+int zyad = 10;
+
+bool f = hana >= zyad;
+bool f =( hana >= zyad ) || !(men - summation(hana,zyad)); 
+float f =( hana >= zyad ) || !(men - summation(hana,zyad)); 
+int f =( hana >= zyad ) || !(men - summation(hana,zyad)); 
+
+//error left -->string
+string f =( hana >= zyad ) || !(men - summation(hana,zyad)); 
+
+//error invalid operator
+bool f = hana >= x;
+
+//invalid operator
+float grb = (test % x ) + test ;
+
+int aloo = - summation(5,true);
+
+//invalid unary operator
+int aloo = - x;
+

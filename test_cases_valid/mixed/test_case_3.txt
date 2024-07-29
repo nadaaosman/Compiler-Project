@@ -1,0 +1,18 @@
+float summation(int x , float y)
+{
+  int total = x +y;
+  return total;
+}
+
+string x = "nada";
+int test = 20;
+float men= 100;
+int sum = 10 + summation(5,10.5) + (test * men );
+
+int z= false;
+bool y = !z && true || summation(0.5,false);
+
+char hana ='a';
+int zyad = 10;
+
+float f = hana >= zyad;

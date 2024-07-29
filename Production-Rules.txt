@@ -1,0 +1,147 @@
+
+program:                                                    
+                program statement     
+                |
+                ;
+   
+statement:
+                 declaration
+                | function_declaration                 
+                | assignment
+                | return_ SEMICOLON
+                | expression SEMICOLON
+                |  if_                            
+                | while_ 
+                | for_                               
+                | do_while 
+                |  switch_ 
+                | block
+                | BREAK SEMICOLON 
+                ;
+
+data_type:
+                INT_TYPE       
+                | FLOAT_TYPE    
+                | BOOL_TYPE    
+                | CHARACTER_TYPE 
+                | STRING_TYPE    
+                | VOID         
+                ;
+
+declaration:                                                            
+                data_type IDENTIFIER      ASSIGNMENT expression  SEMICOLON   
+                | data_type IDENTIFIER      SEMICOLON 
+                |data_type  CONST     ASSIGNMENT expression  SEMICOLON 
+                ;
+
+return_:
+                RETURN 
+                | RETURN expression 
+                ;
+
+switch_header:
+           SWITCH IDENTIFIER COLON '{';
+switch_:
+                switch_header CASES '}'
+                ;
+
+default_case:
+                DEFAULT COLON block 
+                ;
+
+CASES:
+                CASE  expression CASES
+                | default_case
+                ;
+
+
+function_declaration:
+                data_type IDENTIFIER  function_arg_part block 
+                ;
+
+function_arg_part     : '(' arguments ')' 
+                        | '('              ')' 
+arguments:
+                arguments_declaration COMMA arguments
+                | arguments_declaration
+                ;
+
+arguments_declaration:
+        data_type IDENTIFIER 
+        ;
+       
+if_header:
+       IF  expression 
+       ;
+
+if_body:
+      COLON block 
+      ;
+     
+if_:
+                if_header if_body
+                |  if_header if_body ELSE block 
+                ;
+
+while_:
+                WHILE expression COLON  block 
+                ;
+
+do_while:
+                DO block WHILE '(' expression ')' SEMICOLON 
+                ;
+
+for_:
+                FOR '(' statement expression SEMICOLON assignment ')' {sharedData.loop=0;} block 
+                ;
+
+assignment:
+                 IDENTIFIER  ASSIGNMENT expression SEMICOLON  
+                 |CONST  ASSIGNMENT expression SEMICOLON 
+                ;
+
+block:
+                '{'  program '}' 
+                ;
+
+
+function_call:
+                IDENTIFIER '('   function_call_arguments ')'  
+                ;
+
+function_call_arguments:      
+                expression  COMMA function_call_arguments 
+                | expression 
+                |
+                ;
+
+expression:     
+                IDENTIFIER                
+                | INT                       
+                | FLOAT                 
+                | BOOL                 
+                | CHARACTER            
+                | STRING               
+                | CONST                     
+                | SUB expression         
+                | expression ADD expression  
+                | expression MOD expression  
+                | expression SUB expression  
+                | expression MUL expression  
+                | expression DIV expression 
+                |logics
+                | function_call                                
+                | '(' expression ')' 
+                ;
+
+logics:     
+                expression GREATER expression
+                | expression LESS expression  
+                | expression LESS ASSIGNMENT expression 
+                | expression GREATER ASSIGNMENT expression 
+                | expression EQUAL_TO expression  
+                | expression NOT_EQUAL expression 
+                | expression AND expression 
+                | expression OR expression  
+                | NOT expression 
+                ;

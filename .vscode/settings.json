@@ -1,0 +1,9 @@
+{
+  "files.associations": {
+    "*.ejs": "html",
+    "symboltable.h": "c",
+    "stdlib.h": "c",
+    "string.h": "c",
+    "quadruples.h": "c"
+  }
+}

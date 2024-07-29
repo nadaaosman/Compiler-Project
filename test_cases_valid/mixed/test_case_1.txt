@@ -1,0 +1,35 @@
+int add ( string x, int y)
+{
+    int z;
+    z= y;
+    return z;
+}
+
+string hello(int y, int x)
+{
+    string text ="hello";  
+    return text;
+}
+
+void useless(string txt)
+{
+    int bla=1;
+}
+
+int a=3;
+int c ;
+int m;
+string g="nada";
+
+c = add (g,a);
+
+hello(a,7.6);
+
+bool Aiwa = add('q',true);
+
+float AHMED = true;
+
+add(g,	AHMED);
+
+float sum = AHMED;
+

@@ -1,0 +1,27 @@
+int a = 2;
+int B = 3;
+int c = 3;
+
+if a > B :{
+  if a > 2 : {
+    c = c % 2;
+  } else {
+    c = 5;
+  }
+} else {  
+  c = c / 2;
+}
+
+string x = "";
+
+if a < 2 : {
+  x = "thanks";
+} else 
+{
+  if a > 2 : {  
+  x = "helllo";
+            } 
+     else {  
+  x = "hii";
+}
+}

@@ -1,0 +1,66 @@
+//int
+int test;
+// error use variable before initialization
+//int a = test;
+
+//valid
+int a = 5;
+int b = 2.5;
+int c = true;
+int d = 'Q';
+
+// incomptabile types
+//int e = "nada"; 
+
+//float
+float g = 1.1;
+float h = 5;
+float i = true;
+float t = 'a';
+
+// incomptabile types
+//float k = "hi"; 
+
+//bool
+bool n = false;
+bool o = 5;
+bool p = 5.5;
+bool q = 'A';
+
+//incomptabile types
+//float r = "ssss"; 
+
+
+//string
+string u = "hi";
+string m = 'q';
+
+//incomptabile types
+//string v = 6;
+//string w = 8.5;
+//string x = true;
+
+
+//char
+char z = 'c';
+
+// incomptabile types
+//char oo = 6;
+//char j = 8.5;
+//char qq = true;
+//char aq = "kkkaaakk";
+
+
+// already declared in this scope
+//float a = 5.5;
+
+//constant 
+float QWQ = 1.2;
+
+// constant can't be reassigned
+//QWQ = 5.5;
+
+
+//undercalred identifier
+//int dead = done;
+

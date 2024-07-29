@@ -1,0 +1,66 @@
+// mathematical operations
+
+//it is also valid for bool , float , char
+int test = 0;
+test = test + 23;
+test = test - 23;
+test = test * 23;
+test = test / 23;
+test = test % 23;
+test = -test;
+test = test + 5 * 5 + 10 / 20;
+
+// invalid operators type incomptabile
+//test = test + "hi";
+
+//valid concatination
+string m = "aaa" + "hii";
+
+string a = "aaa";
+string b = "www";
+
+//invalid operators incomptabile types
+//string diff = a-b;
+//string mult = a*b;
+//string div = a/b;
+//string mod = a%b;
+
+// logical operation
+bool y = true;
+float ee= 5.5;
+
+y = y || true;
+y = y && false;
+y = test && !ee;
+int x = test || y;
+y = !y;
+
+// invalid operator
+//y = y && "string";
+
+//equality 
+int qq = 5 == 10;
+int weq = 5 != 10;
+int c = 10 > 4;
+int d = 10 >= 4;
+int e = 10 < 4;
+int f = 10 <= 4;
+int re = (10==50) && 50 ;
+bool req = ("eee"=="ewq") && 50 ;
+bool req1 = ('c'>'a') && 50 ;
+bool req2 = ( 20 >'a') && 50 ;
+bool req3 = ( 20.5 > true) && 50 ;
+
+//invalid operator operand type incomptabile
+//int  done  =  - m ;
+//bool dad = !m;
+
+char soha = 'a';
+int done = - soha;
+
+//invalid operators
+//bool rr = (10== "test") && 50 ;
+
+
+
+

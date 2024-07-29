@@ -1,0 +1,29 @@
+int x = 4 + 10 - 11 * 12;
+int y = x;
+int a = true;
+int b = (a + 6) * 12;
+
+int test2 = 'a' + 'w';
+
+int test3 = ('a' % 20.5) ;
+float test4 = ('a' / 20) ;
+bool test5 = ('a' * true) ;
+
+
+
+//type incompatible in assignment operation
+//int test = "aaa" + "bb";
+
+//type incompatible in assignment operation
+//string test1 = 'a' + 'w';
+//string test1 = 'a' / 20.5;
+
+//invalid operator type incomptabile
+//string did = 'a' / "aaaa";
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+int add ( string x, int y)
+{
+//used before intilization
+// int z;  
+
+ int z = 6;
+ //incompatabile types
+ //  z= x;
+ return z;
+{
+int nada =9;
+}
+// nada =2;
+}
+
+//change the return type to test expression actually with it
+string hello(int y, int x)
+{
+    string text ="hello";
+    //missing return 
+    return text;
+}
+
+void useless(string txt)
+{
+    int bla=1;
+    //cant have return
+    //return 6;
+}
+
+//undeclared identifier
+int c ;
+
+string g="j";
+//already declared
+//int g = 10;
+
+c= add (g,5);
+
+c= add (g,true);
+
+//too many arguments
+//add (g,5,"nada");
+
+//too few arguments
+//add (g);
+
+int AHMED = 7.5;
+//constant can't be reassigned
+//AHMED =9;
+
+
+add(g,AHMED);
+
+//argument incomptaibile types
+//hello(g,true);
+
+char x = 'a';
+int z =5;
+//not assigned anything to char except char
+//char y = z;
+
+//accepted
+string nada = x ;
+
+//incomptible argument types
+//add(7.5,5);
+
+//invalid as func is void
+//int ahh = useless("off");
